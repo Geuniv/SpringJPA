@@ -19,38 +19,38 @@ import java.io.Serializable;
 public class UserInfoEntity implements Serializable {
 
     @Id
-    @Column(name = "user_id")
+    @Column(name = "USER_ID")
     private String userId;
 
     @NonNull
-    @Column(name = "user_name", length = 500, nullable = false)
+    @Column(name = "USER_NAME", length = 500, nullable = false)
     private String username;
 
     @NonNull
-    @Column(name = "password", length = 100, nullable = false)
+    @Column(name = "PASSWORD", length = 1, nullable = false)
     private String password;
 
     @NonNull
-    @Column(name = "email", nullable = false)
+    @Column(name = "EMAIL", nullable = false)
     private String email;
 
     @NonNull
-    @Column(name = "addr1", nullable = false)
+    @Column(name = "ADDR1", nullable = false)
     private String addr1;
     
-    @Column(name = "addr2", nullable = false)
+    @Column(name = "ADDR2", nullable = false)
     private String addr2;
     
-    @Column(name = "reg_id", nullable = false)
+    @Column(name = "reg_id", updatable = false)
     private String regId;
     
-    @Column(name = "reg_dt", nullable = false)
+    @Column(name = "reg_dt", updatable = false)
     private String regDt;
 
-    @Column(name = "chg_id", nullable = false)
+    @Column(name = "chg_id")
     private String chgId;
 
-    @Column(name = "chg_dt", nullable = false)
+    @Column(name = "chg_dt")
     private String chgDt;
     
 //    @Column(name = "roles") // 권한 데이터는 ,를 구분자로 여러 개 ( 예 : 관리자, 일반사용자 ) 정의 가능함
