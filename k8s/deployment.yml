@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: my-notice
-          image: i
+          image: docker.io/geuniv/notice-jpa-java17
           imagePullPolicy: IfNotPresent
           resources:
             requests:
